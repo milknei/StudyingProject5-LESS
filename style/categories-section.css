@@ -1,0 +1,79 @@
+.title {
+  font-size: 24px;
+  line-height: 27px;
+  font-weight: 400;
+  letter-spacing: -0.035em;
+  color: #62D0DF;
+}
+.max-width-parrent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.categories {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 120px;
+}
+.categories-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.categories-card {
+  box-sizing: border-box;
+  height: 480px;
+  flex-basis: 480px;
+  display: flex;
+  justify-content: center;
+  padding-top: 96px;
+  flex-shrink: 0;
+  flex-grow: 1;
+}
+.categories-card-content {
+  position: relative;
+  width: 340px;
+  border-top: 1px solid #FFFFFF;
+  padding-top: 24px;
+}
+.categories-card-title {
+  width: 100px;
+  display: block;
+  font-size: 32px;
+  line-height: 34px;
+  letter-spacing: -0.006em;
+  color: #FFFFFF;
+  margin-left: 20px;
+}
+.categories-card-title::before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  top: 33px;
+  left: 0;
+  width: 9px;
+  height: 9px;
+  background: #E9B730;
+  border-radius: 50%;
+}
+.categories-card:nth-of-type(1) {
+  background: #22356F;
+}
+.categories-card:nth-of-type(2) {
+  background: #0052C1;
+}
+.categories-card:nth-of-type(3) {
+  background-image: url("../img/strawberries.png");
+  background-size: cover;
+  background-position: center;
+}
+.categories-card:nth-of-type(4) {
+  background: #62D0DF;
+}
+.categories-card:nth-of-type(5) {
+  background: #DEE1FF;
+}
+.categories-card:nth-of-type(6) {
+  background: #8F00FF;
+}

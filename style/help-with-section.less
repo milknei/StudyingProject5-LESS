@@ -1,0 +1,76 @@
+@import url('./mixins.less');
+@import url(./variables.less);
+
+.help-with {
+    .max-width-parrent();
+
+    &-title {
+        text-align: center;
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 0.06em;
+        color: rgba(34, 53, 111, 0.5);
+        margin-bottom: 24px;
+    }
+
+    &-cards {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    &-card {
+        box-sizing: border-box;
+        height: 360px;
+        flex-basis: 360px;
+        display: flex;
+        justify-content: center;
+        padding-top: 72px;
+        flex-shrink: 0;
+        flex-grow: 1;
+        
+        &-content {
+            position: relative;
+            width: 255px;
+            border-top: 1px solid #FFFFFF;
+            padding-top: 24px;
+        }
+
+        &-title {
+            display: block;
+            font-size: 32px;
+            line-height: 34px;
+            letter-spacing: -0.006em;
+            color: #FFFFFF;
+            margin-left: 20px;
+            
+            &::before {
+                content: '';
+                display: inline-block;
+                position: absolute;
+                top: 33px;
+                left: 0;
+                width: 9px;
+                height: 9px;
+                background: @yellow;
+                border-radius: 50%;
+            }
+        }
+        
+        &:nth-of-type(1) {
+            background: #FFE2DE;
+        }
+
+        &:nth-of-type(2) {
+            background: #C4E769;
+        }
+
+        &:nth-of-type(3) {
+            background: #62D0DF;
+        }
+
+        &:nth-of-type(4) {
+            background: #0052C1;
+        }
+    }
+}

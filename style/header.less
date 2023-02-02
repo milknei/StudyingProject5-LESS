@@ -1,0 +1,72 @@
+@import url('./mixins.less');
+@import url(./variables.less);
+
+.header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background: @headerBg;
+    padding: 13px 0;
+    z-index: 100;
+    border-bottom: 2px dashed gray;
+    .max-width-parrent();
+
+    &-container {
+        z-index: 100;
+    }
+
+    &-title {
+        .title();
+    }
+
+    &-list {
+        position: relative;
+        top: 5px;
+        align-self: stretch;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+
+        &-item {
+            align-self: stretch;
+            display: flex;
+            align-items: center;
+            list-style: none;
+        }
+        
+        &-link {
+            display: block;
+            border-bottom: 1px solid transparent;
+            text-decoration: none;
+            color: @darkBlue;
+            font-size: 14px;
+            line-height: 16px;
+            padding: 12px 6px;
+        }
+        
+        &-link:hover {
+            border-bottom: 1px solid @darkBlue;
+            font-weight: 600;
+            color: @darkBlue;
+        }
+    }
+
+    &-btn {
+        position: relative;
+        top:13px;
+        font-size: 14px;
+        line-height: 16px;
+        color: @white;
+        border-radius: 50px;
+        background: @mainBlue;
+        text-transform: uppercase;
+        padding: 16px 30px;
+        z-index: 100;
+    }
+
+    &-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

@@ -1,0 +1,35 @@
+@import url('./mixins.less');
+@import url(./variables.less);
+
+.thrive {
+    position: relative;
+    background: #62D0DF;
+    padding-top: 151px;
+    padding-bottom: 95px;
+    .max-width-parrent();
+
+    &-title {
+        color: @white;
+        font-size: 36px;
+        line-height: 27px;
+        margin-bottom: 75px;
+    }
+    
+    &-description {
+        color: @white;
+        font-size: 21px;
+        line-height: 35px;
+    }
+    
+    &-strong {
+        font-size: 24px;
+        line-height: 35px;
+    }
+
+    &-img {
+        height: calc(100% + 151px + 95px);
+        position: absolute;
+        top: -151px;
+        right: 0;
+    }
+}

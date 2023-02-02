@@ -1,0 +1,42 @@
+.title {
+  font-size: 24px;
+  line-height: 27px;
+  font-weight: 400;
+  letter-spacing: -0.035em;
+  color: #62D0DF;
+}
+.max-width-parrent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.thrive {
+  position: relative;
+  background: #62D0DF;
+  padding-top: 151px;
+  padding-bottom: 95px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.thrive-title {
+  color: #FFF;
+  font-size: 36px;
+  line-height: 27px;
+  margin-bottom: 75px;
+}
+.thrive-description {
+  color: #FFF;
+  font-size: 21px;
+  line-height: 35px;
+}
+.thrive-strong {
+  font-size: 24px;
+  line-height: 35px;
+}
+.thrive-img {
+  height: calc(100% + 151px + 95px);
+  position: absolute;
+  top: -151px;
+  right: 0;
+}
